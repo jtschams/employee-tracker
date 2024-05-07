@@ -14,7 +14,5 @@ app.use(async function(req, res, next) {
 
 });
 
-app.listen(PORT, () =>
-    console.log(`App listening at http://localhost:${PORT}`)
-  );
+app.listen(PORT);
   

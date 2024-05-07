@@ -22,8 +22,7 @@ SELECT e.id as employee_id, e.first_name, e.last_name, title, department_name, s
 JOIN roles ON e.role_id = roles.id
 JOIN departments ON roles.department_id = departments.id
 JOIN employees m ON e.manager_id = m.id
-WHERE m.first_name = 'Charlie'
-AND m.last_name = 'Chaplin';
+WHERE m.id = 1;
 
 -- View Employees by Department
 SELECT e.id as employee_id, e.first_name, e.last_name, title, department_name, salary, m.first_name || ' ' || m.last_name AS manager from employees e 
